@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -346,6 +348,17 @@ a {
   min-height: 44px;
 }
 
+.card-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background:#222;
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+  margin-right: 10px;
+  border:none;
+}
+
 @media all and (max-width: 800px){
   .card {
       flex:50%;
@@ -393,8 +406,8 @@ footer {
 .container-detail {
   position: absolute;
   top: 25%;
-  left: 40%;
-  transform: translate(-25%, -30%);
+  left: 33%;
+  transform: translate(-25%, -33%);
   text-align: center;
 }
 
@@ -430,8 +443,22 @@ footer {
   margin: 20px 0;
 }
 
-.card-overview {
+.card-overview, .card-menus {
   padding-top: 30px;
+}
+
+.card-menus {
+  display: flex;
+}
+
+.foods {
+  margin-right: 50px;
+}
+
+.review {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
 }
 
 /*

@@ -5,15 +5,38 @@ const createRestaurantDetailTemplate = (restaurant) => `
         <img src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}" alt="img" class="img-card-single" />
         <div class="card-information">
             <h2 class="card-title">${restaurant.name}</h2>
+            ${restaurant.categories.map((categorie) => `<button aria-label="restaurant categories" class="card-btn">${categorie.name}</button>`).join('')}
             <hr/>
             <h2>Kota</h2>
             <p>${restaurant.city}</p>
             <h2>Rating</h2>
             <p>${restaurant.rating}</p>
         </div>
+        <div class="card-menus">
+          <div class="foods">
+            <h3>Daftar Makanan</h3>
+            <ul>
+            ${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="drinks">
+            <h3>Daftar Minuman</h3>
+            <ul>
+              ${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
         <div class="card-overview">
             <h3>Deskripsi</h3>
             ${restaurant.description}
+        </div>
+        <div class="card-overview">
+            <h3>Reviews</h3>
+            ${restaurant.customerReviews.map((review) => ` <div class="review">
+            <h4>${review.name}</h4>
+            <span>${review.date}</span>
+            <p>${review.review}</p>
+        </div>`).join('')}
         </div>
       </div>
       `;

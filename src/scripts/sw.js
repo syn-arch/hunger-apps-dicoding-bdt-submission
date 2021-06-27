@@ -18,7 +18,7 @@ precacheAndRoute(
         ...self.__WB_MANIFEST,
         {
             url:
-                'https://fonts.googleapis.com/css?family=Poppins&display=swap',
+                'https://fonts.googleapis.com/css?family=Poppins:400,700,900',
             revision: 1,
         },
     ],

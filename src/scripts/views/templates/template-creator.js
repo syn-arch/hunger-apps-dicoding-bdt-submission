@@ -5,7 +5,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
         <img src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}" alt="img" class="img-card-single" />
         <div class="card-information">
             <h2 class="card-title">${restaurant.name}</h2>
-            ${restaurant.categories.map((categorie) => `<button aria-label="restaurant categories" class="card-btn">${categorie.name}</button>`).join('')}
+            ${restaurant.categories.map((categorie) => `<span class="card-btn">${categorie.name}</span>`).join('')}
             <hr/>
             <h2>Kota</h2>
             <p>${restaurant.city}</p>
@@ -52,7 +52,7 @@ const createRestaurantItemTemplate = (restaurant) => `
           <p class="card-description">
               ${restaurant.description}
           </p>
-          <a href="#/detail/${restaurant.id}" class="card-button">More</a>
+         <button class="btn-card"><a href="#/detail/${restaurant.id}" class="card-button">More</a></button>
       </div>
     </div>
   `;

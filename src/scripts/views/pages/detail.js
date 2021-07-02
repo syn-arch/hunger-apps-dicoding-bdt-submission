@@ -8,10 +8,8 @@ const Detail = {
         return `
         <div id="detail-restaurant" class="hero-detail"></div>
         <div class="container-detail text-white">
-            <h1>Temukan Cinta Dalam Setiap Masakan</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum dolorem, dignissimos maxime iusto
-                consequuntur aliquam quae aspernatur nam quos hic accusantium ratione laboriosam totam adipisci quis
-                excepturi eum obcaecati.</p>
+            <h1 class="detail-title">Temukan Cinta Dalam Setiap Masakan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum dolorem..</p>
         </div>
     
         <div class="restaurant">

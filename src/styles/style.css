@@ -335,8 +335,15 @@ a {
   margin-bottom: 20px;
 }
 
+.card-rating {
+  display: block;
+}
+
 .card-link {
+  display: inline-block;
   color: black;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .card-title {

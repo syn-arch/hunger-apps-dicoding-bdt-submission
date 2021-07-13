@@ -1,8 +1,10 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createRestaurantDetailTemplate = (restaurant) => `
       <div class="card-single">
-        <img src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}" alt="img" class="img-card-single" />
+        <img src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}" alt="${restaurant.name}" class="img-card-single" />
         <div class="card-information">
             <h2 class="card-title">${restaurant.name}</h2>
             ${restaurant.categories.map((categorie) => `<span class="card-btn">${categorie.name}</span>`).join('')}
@@ -46,7 +48,7 @@ const createRestaurantItemTemplate = (restaurant) => `
     <div class="card">
       <div class="card-wrapper">
           <span class="span">${restaurant.city}</span>
-          <img alt="${restaurant.name}" class="card-img" src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}">
+          <img alt="${restaurant.name}" class="card-img lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${restaurant.pictureId}">
           <span class="card-rating">Rating: ${restaurant.rating}</span>
           <a href="#/detail/${restaurant.id}" class="card-link"><h3 class="card-title">${restaurant.name}</h3></a>
           <p class="card-description">
@@ -56,6 +58,12 @@ const createRestaurantItemTemplate = (restaurant) => `
       </div>
     </div>
   `;
+
+const createEmptyRestaurant = `
+    <div class="empty-restaurant">
+      Nothing Restaurant
+    </div>
+    `;
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this restaurant" id="likeButton" class="like">
@@ -74,4 +82,5 @@ export {
   createRestaurantDetailTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
+  createEmptyRestaurant,
 };

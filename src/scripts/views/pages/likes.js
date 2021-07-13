@@ -1,10 +1,13 @@
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
-import { createRestaurantItemTemplate } from '../templates/template-creator';
+import { createEmptyRestaurant, createRestaurantItemTemplate } from '../templates/template-creator';
 
 const Like = {
   async render() {
     return `
-    <div id="detail-restaurant" class="hero-detail"></div>
+    <picture">
+      <source class="hero-detail" media="(max-width: 600px)" srcset="/images/heros/hero-image_4-small.jpg" type="image/jpg">
+      <img class="hero-detail" src="/images/heros/hero-image_4-large.jpg" alt=""></img>
+    </picture>
       <div class="container-detail text-white">
           <h1>Simpan Restaurant Terbaikmu Disini</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum dolorem, dignissimos maxime iusto
@@ -26,10 +29,16 @@ const Like = {
 
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
+    console.log(restaurants);
     const restaurantsContainer = document.querySelector('.cards');
-    restaurants.forEach((restaurant) => {
-      restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);
-    });
+
+    if (restaurants.length >= 1) {
+      restaurants.forEach((restaurant) => {
+        restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);
+      });
+    } else {
+      restaurantsContainer.innerHTML = createEmptyRestaurant;
+    }
   },
 };
 

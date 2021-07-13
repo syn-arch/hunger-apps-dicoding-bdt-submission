@@ -6,7 +6,10 @@ import { createRestaurantDetailTemplate } from '../templates/template-creator';
 const Detail = {
     async render() {
         return `
-        <div id="detail-restaurant" class="hero-detail"></div>
+        <picture">
+            <source class="hero-detail" media="(max-width: 600px)" srcset="/images/heros/hero-image_4-small.jpg" type="image/jpg">
+            <img class="hero-detail" src="/images/heros/hero-image_4-large.jpg" alt=""></img>
+        </picture>
         <div class="container-detail text-white">
             <h1 class="detail-title">Temukan Cinta Dalam Setiap Masakan</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum dolorem..</p>

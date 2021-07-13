@@ -29,7 +29,6 @@ const Like = {
 
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
-    console.log(restaurants);
     const restaurantsContainer = document.querySelector('.cards');
 
     if (restaurants.length >= 1) {

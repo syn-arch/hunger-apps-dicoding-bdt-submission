@@ -9,12 +9,12 @@ function toggleMenu() {
         menu.classList.remove('active');
 
         // add the menu icon
-        toggle.querySelector('a').innerHTML = '<i class="fas fa-bars"</i>';
+        toggle.querySelector('.btn-menu').innerHTML = '<i class="fas fa-bars"</i>';
     } else {
         menu.classList.add('active');
 
         // add the close (x) button
-        toggle.querySelector('a').innerHTML = '<i class="fas fa-times"></i>';
+        toggle.querySelector('.btn-menu').innerHTML = '<i class="fas fa-times"></i>';
     }
 }
 

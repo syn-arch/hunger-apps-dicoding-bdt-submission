@@ -4,9 +4,12 @@ import { createRestaurantItemTemplate } from '../templates/template-creator';
 const ListRestaurant = {
     async render() {
         return `
-        <picture">
-            <source class="hero" media="(max-width: 600px)" srcset="/images/heros/hero-image_4-small.jpg" type="image/jpg">
-            <img class="hero" src="/images/heros/hero-image_4-large.jpg" alt=""></img>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/images/heros/hero-image_4-small.jpg">
+            <img
+                class="hero" 
+                src="/images/heros/hero-image_4-large.jpg" 
+                alt=""></img>
         </picture>
         <div class="container text-white">
             <h1>Selamat Datang</h1>

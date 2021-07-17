@@ -1,10 +1,12 @@
 {
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "InjectManifest has been called multiple times, perhaps due to running webpack in --watch mode. The precache manifest generated after the first call may be inaccurate! Please see https://github.com/GoogleChrome/workbox/issues/1790 for more information."
+  ],
   "version": "4.46.0",
-  "hash": "a5df403d7c6d7e28aeb3",
-  "time": 1244,
-  "builtAt": 1626172542146,
+  "hash": "791bfc6580b7d4328c93",
+  "time": 622,
+  "builtAt": 1626496068610,
   "publicPath": "",
   "outputPath": "D:\\laragon\\www\\hunger-apps\\dist",
   "assetsByChunkName": {
@@ -19,7 +21,7 @@
   "assets": [
     {
       "name": "bundle.js",
-      "size": 50678,
+      "size": 50793,
       "chunks": [
         "main~._m"
       ],
@@ -212,14 +214,6 @@
       "emitted": true
     },
     {
-      "name": "index.html",
-      "size": 2138,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {},
-      "emitted": true
-    },
-    {
       "name": "manifest.json",
       "size": 1431,
       "chunks": [],
@@ -232,7 +226,7 @@
     },
     {
       "name": "sw.js",
-      "size": 371255,
+      "size": 371180,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -291,7 +285,7 @@
   "chunks": [
     {
       "id": "defaultVendors~main~._node_modules_a",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -323,7 +317,7 @@
           "index2": 7,
           "size": 4263,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -376,15 +370,15 @@
           "index2": 34,
           "size": 2517,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "defaultVendors~main~._node_modules_a"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -393,13 +387,13 @@
             },
             {
               "id": "./src/styles/style.css",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
               "name": "./src/styles/style.css"
             },
             {
-              "id": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-              "name": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css"
+              "id": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css"
             }
           ],
           "failed": false,
@@ -408,10 +402,10 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-              "module": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "module": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
               "type": "cjs require",
               "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
               "loc": "2:34-94"
@@ -429,7 +423,7 @@
           "index2": 17,
           "size": 14890,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -494,7 +488,7 @@
     },
     {
       "id": "defaultVendors~main~._node_modules_h",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -526,7 +520,7 @@
           "index2": 10,
           "size": 7500,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -584,7 +578,7 @@
           "index2": 11,
           "size": 50049,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -642,7 +636,7 @@
           "index2": 12,
           "size": 449,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -695,7 +689,7 @@
           "index2": 8,
           "size": 668,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -776,7 +770,7 @@
           "index2": 9,
           "size": 3792,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -834,7 +828,7 @@
           "index2": 47,
           "size": 2915,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -860,9 +854,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/likes.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-              "name": "./src/scripts/views/pages/likes.js"
+              "id": "./src/scripts/views/pages/detail.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+              "name": "./src/scripts/views/pages/detail.js"
+            },
+            {
+              "id": "./src/scripts/utils/like-button-iniator.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+              "name": "./src/scripts/utils/like-button-iniator.js"
             },
             {
               "id": "./src/scripts/data/favorite-restaurant-idb.js",
@@ -911,7 +910,7 @@
           "index2": 46,
           "size": 7495,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -937,9 +936,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/likes.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-              "name": "./src/scripts/views/pages/likes.js"
+              "id": "./src/scripts/views/pages/detail.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+              "name": "./src/scripts/views/pages/detail.js"
+            },
+            {
+              "id": "./src/scripts/utils/like-button-iniator.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+              "name": "./src/scripts/utils/like-button-iniator.js"
             },
             {
               "id": "./src/scripts/data/favorite-restaurant-idb.js",
@@ -1064,7 +1068,7 @@
     },
     {
       "id": "defaultVendors~main~._node_modules_l",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -1096,7 +1100,7 @@
           "index2": 14,
           "size": 8857,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1149,7 +1153,7 @@
           "index2": 21,
           "size": 14670,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1207,7 +1211,7 @@
           "index2": 23,
           "size": 2510,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1270,7 +1274,7 @@
           "index2": 24,
           "size": 2544,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1333,7 +1337,7 @@
           "index2": 25,
           "size": 127,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1391,7 +1395,7 @@
           "index2": 32,
           "size": 24583,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1443,13 +1447,13 @@
           "index2": 33,
           "size": 6827,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "defaultVendors~main~._node_modules_l"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "issuerId": "./src/styles/style.css",
           "issuerName": "./src/styles/style.css",
           "issuerPath": [
@@ -1460,7 +1464,7 @@
             },
             {
               "id": "./src/styles/style.css",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
               "name": "./src/styles/style.css"
             }
           ],
@@ -1471,7 +1475,7 @@
           "reasons": [
             {
               "moduleId": "./src/styles/style.css",
-              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
               "module": "./src/styles/style.css",
               "moduleName": "./src/styles/style.css",
               "type": "cjs require",
@@ -1498,7 +1502,7 @@
     },
     {
       "id": "defaultVendors~main~._node_modules_lazysizes_l",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -1530,7 +1534,7 @@
           "index2": 42,
           "size": 19987,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1611,7 +1615,7 @@
           "index2": 43,
           "size": 4692,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1681,7 +1685,7 @@
     },
     {
       "id": "defaultVendors~main~._node_modules_sockjs-client_dist_sockjs.js~9be258d6",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -1713,7 +1717,7 @@
           "index2": 3,
           "size": 187118,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1778,7 +1782,7 @@
     },
     {
       "id": "defaultVendors~main~._node_modules_u",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": false,
       "reason": "split chunk (cache group: defaultVendors) (name: defaultVendors~main)",
@@ -1810,7 +1814,7 @@
           "index2": 26,
           "size": 23317,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1863,7 +1867,7 @@
           "index2": 22,
           "size": 314,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1921,7 +1925,7 @@
           "index2": 4,
           "size": 1058,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1979,7 +1983,7 @@
           "index2": 5,
           "size": 4173,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2050,7 +2054,7 @@
           "index2": 31,
           "size": 4390,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2093,7 +2097,7 @@
           "index2": 13,
           "size": 3596,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2141,7 +2145,7 @@
           "index2": 6,
           "size": 1568,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2189,7 +2193,7 @@
           "index2": 28,
           "size": 2978,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2237,7 +2241,7 @@
           "index2": 27,
           "size": 658,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2290,7 +2294,7 @@
           "index2": 15,
           "size": 964,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2347,7 +2351,7 @@
           "index2": 19,
           "size": 1630,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2395,7 +2399,7 @@
           "index2": 16,
           "size": 402,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2443,7 +2447,7 @@
           "index2": 0,
           "size": 135,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2496,7 +2500,7 @@
           "index2": 1,
           "size": 161,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2544,15 +2548,15 @@
           "index2": 2,
           "size": 472,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "defaultVendors~main~._node_modules_u"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\node-libs-browser\\node_modules\\punycode\\punycode.js",
-          "issuerId": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
-          "issuerName": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\sockjs-client\\dist\\sockjs.js",
+          "issuerId": "./node_modules/sockjs-client/dist/sockjs.js",
+          "issuerName": "./node_modules/sockjs-client/dist/sockjs.js",
           "issuerPath": [
             {
               "id": 0,
@@ -2565,19 +2569,19 @@
               "name": "(webpack)-dev-server/client?http://localhost:8080"
             },
             {
-              "id": "./node_modules/webpack-dev-server/client/utils/createSocketUrl.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\utils\\createSocketUrl.js",
-              "name": "(webpack)-dev-server/client/utils/createSocketUrl.js"
+              "id": "./node_modules/webpack-dev-server/client/socket.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\socket.js",
+              "name": "(webpack)-dev-server/client/socket.js"
             },
             {
-              "id": "./node_modules/url/url.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\url\\url.js",
-              "name": "./node_modules/url/url.js"
+              "id": "./node_modules/webpack-dev-server/client/clients/SockJSClient.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\clients\\SockJSClient.js",
+              "name": "(webpack)-dev-server/client/clients/SockJSClient.js"
             },
             {
-              "id": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\node-libs-browser\\node_modules\\punycode\\punycode.js",
-              "name": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js"
+              "id": "./node_modules/sockjs-client/dist/sockjs.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\sockjs-client\\dist\\sockjs.js",
+              "name": "./node_modules/sockjs-client/dist/sockjs.js"
             }
           ],
           "failed": false,
@@ -2616,7 +2620,7 @@
           "index2": 20,
           "size": 497,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2679,7 +2683,7 @@
           "index2": 18,
           "size": 75,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2732,7 +2736,7 @@
           "index2": 29,
           "size": 1372,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": true,
           "prefetched": false,
           "chunks": [
@@ -2785,7 +2789,7 @@
           "index2": 54,
           "size": 5367,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2855,14 +2859,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 25191,
+      "size": 25261,
       "names": [
         "main~._m"
       ],
       "files": [
         "bundle.js"
       ],
-      "hash": "c3e244148d5e3288ed64",
+      "hash": "673833918c4563ece855",
       "siblings": [
         "defaultVendors~main~._node_modules_a",
         "defaultVendors~main~._node_modules_h",
@@ -2882,7 +2886,7 @@
           "index": 0,
           "index2": 57,
           "size": 40,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -2910,20 +2914,20 @@
           "depth": 0
         },
         {
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+          "id": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "name": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
           "index": 37,
           "index2": 35,
           "size": 8619,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "main~._m"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "issuerId": "./src/styles/style.css",
           "issuerName": "./src/styles/style.css",
           "issuerPath": [
@@ -2934,7 +2938,7 @@
             },
             {
               "id": "./src/styles/style.css",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
               "name": "./src/styles/style.css"
             }
           ],
@@ -2945,12 +2949,12 @@
           "reasons": [
             {
               "moduleId": "./src/styles/style.css",
-              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+              "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
               "module": "./src/styles/style.css",
               "moduleName": "./src/styles/style.css",
               "type": "cjs require",
-              "userRequest": "!!../../node_modules/css-loader/dist/cjs.js!./style.css",
-              "loc": "2:26-92"
+              "userRequest": "!!../../node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css",
+              "loc": "2:26-102"
             }
           ],
           "providedExports": null,
@@ -2964,7 +2968,7 @@
           "index": 31,
           "index2": 30,
           "size": 170,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3012,15 +3016,15 @@
           "index2": 48,
           "size": 1046,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "main~._m"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-          "issuerId": "./src/scripts/views/pages/likes.js",
-          "issuerName": "./src/scripts/views/pages/likes.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+          "issuerId": "./src/scripts/utils/like-button-iniator.js",
+          "issuerName": "./src/scripts/utils/like-button-iniator.js",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -3038,9 +3042,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/likes.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-              "name": "./src/scripts/views/pages/likes.js"
+              "id": "./src/scripts/views/pages/detail.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+              "name": "./src/scripts/views/pages/detail.js"
+            },
+            {
+              "id": "./src/scripts/utils/like-button-iniator.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+              "name": "./src/scripts/utils/like-button-iniator.js"
             }
           ],
           "failed": false,
@@ -3100,7 +3109,7 @@
               "moduleName": "./src/scripts/views/pages/likes.js",
               "type": "harmony import specifier",
               "userRequest": "../../data/favorite-restaurant-idb",
-              "loc": "31:30-51"
+              "loc": "34:30-51"
             }
           ],
           "providedExports": [
@@ -3117,7 +3126,7 @@
           "index2": 41,
           "size": 547,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3169,7 +3178,7 @@
               "moduleName": "./src/scripts/views/pages/detail.js",
               "type": "harmony import specifier",
               "userRequest": "../../data/restaurantdb-source",
-              "loc": "27:33-54"
+              "loc": "30:33-54"
             },
             {
               "moduleId": "./src/scripts/views/pages/list-restaurant.js",
@@ -3187,7 +3196,7 @@
               "moduleName": "./src/scripts/views/pages/list-restaurant.js",
               "type": "harmony import specifier",
               "userRequest": "../../data/restaurantdb-source",
-              "loc": "35:34-55"
+              "loc": "38:34-55"
             }
           ],
           "providedExports": [
@@ -3204,7 +3213,7 @@
           "index2": 40,
           "size": 197,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3285,17 +3294,17 @@
           "name": "./src/scripts/globals/config.js",
           "index": 46,
           "index2": 39,
-          "size": 329,
+          "size": 321,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "main~._m"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\data\\favorite-restaurant-idb.js",
-          "issuerId": "./src/scripts/data/favorite-restaurant-idb.js",
-          "issuerName": "./src/scripts/data/favorite-restaurant-idb.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\templates\\template-creator.js",
+          "issuerId": "./src/scripts/views/templates/template-creator.js",
+          "issuerName": "./src/scripts/views/templates/template-creator.js",
           "issuerPath": [
             {
               "id": "./src/scripts/index.js",
@@ -3313,14 +3322,14 @@
               "name": "./src/scripts/routes/routes.js"
             },
             {
-              "id": "./src/scripts/views/pages/likes.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-              "name": "./src/scripts/views/pages/likes.js"
+              "id": "./src/scripts/views/pages/list-restaurant.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\list-restaurant.js",
+              "name": "./src/scripts/views/pages/list-restaurant.js"
             },
             {
-              "id": "./src/scripts/data/favorite-restaurant-idb.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\data\\favorite-restaurant-idb.js",
-              "name": "./src/scripts/data/favorite-restaurant-idb.js"
+              "id": "./src/scripts/views/templates/template-creator.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\templates\\template-creator.js",
+              "name": "./src/scripts/views/templates/template-creator.js"
             }
           ],
           "failed": false,
@@ -3415,7 +3424,7 @@
           "index2": 56,
           "size": 402,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3461,7 +3470,7 @@
           "index2": 37,
           "size": 1581,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3504,7 +3513,7 @@
           "index2": 52,
           "size": 289,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3563,7 +3572,7 @@
           "index2": 38,
           "size": 877,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3623,7 +3632,7 @@
               "moduleName": "./src/scripts/views/pages/detail.js",
               "type": "harmony import specifier",
               "userRequest": "../../routes/url-parser",
-              "loc": "26:20-29"
+              "loc": "29:20-29"
             }
           ],
           "providedExports": [
@@ -3640,7 +3649,7 @@
           "index2": 49,
           "size": 1556,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3692,7 +3701,7 @@
               "moduleName": "./src/scripts/views/pages/detail.js",
               "type": "harmony import specifier",
               "userRequest": "../../utils/like-button-iniator",
-              "loc": "31:8-27"
+              "loc": "34:8-27"
             }
           ],
           "providedExports": [
@@ -3709,7 +3718,7 @@
           "index2": 55,
           "size": 240,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3763,7 +3772,7 @@
           "index2": 53,
           "size": 423,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3815,9 +3824,9 @@
           "name": "./src/scripts/views/pages/detail.js",
           "index": 50,
           "index2": 50,
-          "size": 1777,
+          "size": 1792,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -3879,7 +3888,7 @@
           "name": "./src/scripts/views/pages/likes.js",
           "index": 55,
           "index2": 51,
-          "size": 1709,
+          "size": 1740,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3943,9 +3952,9 @@
           "name": "./src/scripts/views/pages/list-restaurant.js",
           "index": 43,
           "index2": 45,
-          "size": 1770,
+          "size": 1792,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -4009,7 +4018,7 @@
           "index2": 44,
           "size": 3094,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -4088,7 +4097,7 @@
               "moduleName": "./src/scripts/views/pages/detail.js",
               "type": "harmony import specifier",
               "userRequest": "../templates/template-creator",
-              "loc": "29:40-70"
+              "loc": "32:40-70"
             },
             {
               "moduleId": "./src/scripts/views/pages/likes.js",
@@ -4106,7 +4115,7 @@
               "moduleName": "./src/scripts/views/pages/likes.js",
               "type": "harmony import specifier",
               "userRequest": "../templates/template-creator",
-              "loc": "36:42-70"
+              "loc": "39:42-70"
             },
             {
               "moduleId": "./src/scripts/views/pages/likes.js",
@@ -4115,7 +4124,7 @@
               "moduleName": "./src/scripts/views/pages/likes.js",
               "type": "harmony import specifier",
               "userRequest": "../templates/template-creator",
-              "loc": "39:39-60"
+              "loc": "42:39-60"
             },
             {
               "moduleId": "./src/scripts/views/pages/list-restaurant.js",
@@ -4133,7 +4142,7 @@
               "moduleName": "./src/scripts/views/pages/list-restaurant.js",
               "type": "harmony import specifier",
               "userRequest": "../templates/template-creator",
-              "loc": "39:46-74"
+              "loc": "42:46-74"
             }
           ],
           "providedExports": [
@@ -4148,13 +4157,13 @@
         },
         {
           "id": "./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "name": "./src/styles/style.css",
           "index": 35,
           "index2": 36,
-          "size": 525,
+          "size": 535,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -4211,7 +4220,7 @@
       "index": 0,
       "index2": 57,
       "size": 40,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4246,7 +4255,7 @@
       "index2": 7,
       "size": 4263,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4292,20 +4301,20 @@
       "depth": 3
     },
     {
-      "id": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-      "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-      "name": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+      "id": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+      "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+      "name": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
       "index": 37,
       "index2": 35,
       "size": 8619,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "main~._m"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
       "issuerId": "./src/styles/style.css",
       "issuerName": "./src/styles/style.css",
       "issuerPath": [
@@ -4316,7 +4325,7 @@
         },
         {
           "id": "./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "name": "./src/styles/style.css"
         }
       ],
@@ -4327,12 +4336,12 @@
       "reasons": [
         {
           "moduleId": "./src/styles/style.css",
-          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "module": "./src/styles/style.css",
           "moduleName": "./src/styles/style.css",
           "type": "cjs require",
-          "userRequest": "!!../../node_modules/css-loader/dist/cjs.js!./style.css",
-          "loc": "2:26-92"
+          "userRequest": "!!../../node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css",
+          "loc": "2:26-102"
         }
       ],
       "providedExports": null,
@@ -4347,15 +4356,15 @@
       "index2": 34,
       "size": 2517,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "defaultVendors~main~._node_modules_a"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-      "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-      "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+      "issuerId": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+      "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -4364,13 +4373,13 @@
         },
         {
           "id": "./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "name": "./src/styles/style.css"
         },
         {
-          "id": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-          "name": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css"
+          "id": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "name": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css"
         }
       ],
       "failed": false,
@@ -4379,10 +4388,10 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
-          "module": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
-          "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/styles/style.css",
+          "moduleId": "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css",
+          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "module": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
+          "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css",
           "type": "cjs require",
           "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
           "loc": "2:34-94"
@@ -4400,7 +4409,7 @@
       "index2": 17,
       "size": 14890,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4458,7 +4467,7 @@
       "index2": 10,
       "size": 7500,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4516,7 +4525,7 @@
       "index2": 11,
       "size": 50049,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4574,7 +4583,7 @@
       "index2": 12,
       "size": 449,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4627,7 +4636,7 @@
       "index2": 8,
       "size": 668,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4708,7 +4717,7 @@
       "index2": 9,
       "size": 3792,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4766,7 +4775,7 @@
       "index2": 47,
       "size": 2915,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4792,9 +4801,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/likes.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-          "name": "./src/scripts/views/pages/likes.js"
+          "id": "./src/scripts/views/pages/detail.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+          "name": "./src/scripts/views/pages/detail.js"
+        },
+        {
+          "id": "./src/scripts/utils/like-button-iniator.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+          "name": "./src/scripts/utils/like-button-iniator.js"
         },
         {
           "id": "./src/scripts/data/favorite-restaurant-idb.js",
@@ -4843,7 +4857,7 @@
       "index2": 46,
       "size": 7495,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -4869,9 +4883,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/likes.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-          "name": "./src/scripts/views/pages/likes.js"
+          "id": "./src/scripts/views/pages/detail.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+          "name": "./src/scripts/views/pages/detail.js"
+        },
+        {
+          "id": "./src/scripts/utils/like-button-iniator.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+          "name": "./src/scripts/utils/like-button-iniator.js"
         },
         {
           "id": "./src/scripts/data/favorite-restaurant-idb.js",
@@ -4989,7 +5008,7 @@
       "index2": 42,
       "size": 19987,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5070,7 +5089,7 @@
       "index2": 43,
       "size": 4692,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5133,7 +5152,7 @@
       "index2": 14,
       "size": 8857,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5186,7 +5205,7 @@
       "index2": 21,
       "size": 14670,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5244,7 +5263,7 @@
       "index2": 23,
       "size": 2510,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5307,7 +5326,7 @@
       "index2": 24,
       "size": 2544,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5370,7 +5389,7 @@
       "index2": 25,
       "size": 127,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5428,7 +5447,7 @@
       "index2": 32,
       "size": 24583,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5480,7 +5499,7 @@
       "index2": 3,
       "size": 187118,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5538,13 +5557,13 @@
       "index2": 33,
       "size": 6827,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "defaultVendors~main~._node_modules_l"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
       "issuerId": "./src/styles/style.css",
       "issuerName": "./src/styles/style.css",
       "issuerPath": [
@@ -5555,7 +5574,7 @@
         },
         {
           "id": "./src/styles/style.css",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "name": "./src/styles/style.css"
         }
       ],
@@ -5566,7 +5585,7 @@
       "reasons": [
         {
           "moduleId": "./src/styles/style.css",
-          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+          "moduleIdentifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
           "module": "./src/styles/style.css",
           "moduleName": "./src/styles/style.css",
           "type": "cjs require",
@@ -5586,7 +5605,7 @@
       "index2": 26,
       "size": 23317,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5639,7 +5658,7 @@
       "index2": 22,
       "size": 314,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5697,7 +5716,7 @@
       "index2": 4,
       "size": 1058,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5755,7 +5774,7 @@
       "index2": 5,
       "size": 4173,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5826,7 +5845,7 @@
       "index2": 31,
       "size": 4390,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5869,7 +5888,7 @@
       "index2": 13,
       "size": 3596,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5917,7 +5936,7 @@
       "index2": 6,
       "size": 1568,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -5965,7 +5984,7 @@
       "index2": 28,
       "size": 2978,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6013,7 +6032,7 @@
       "index2": 27,
       "size": 658,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6066,7 +6085,7 @@
       "index2": 15,
       "size": 964,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6123,7 +6142,7 @@
       "index2": 19,
       "size": 1630,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6171,7 +6190,7 @@
       "index2": 16,
       "size": 402,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6219,7 +6238,7 @@
       "index2": 0,
       "size": 135,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6272,7 +6291,7 @@
       "index2": 1,
       "size": 161,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6320,15 +6339,15 @@
       "index2": 2,
       "size": 472,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "defaultVendors~main~._node_modules_u"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\node-libs-browser\\node_modules\\punycode\\punycode.js",
-      "issuerId": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
-      "issuerName": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\sockjs-client\\dist\\sockjs.js",
+      "issuerId": "./node_modules/sockjs-client/dist/sockjs.js",
+      "issuerName": "./node_modules/sockjs-client/dist/sockjs.js",
       "issuerPath": [
         {
           "id": 0,
@@ -6341,19 +6360,19 @@
           "name": "(webpack)-dev-server/client?http://localhost:8080"
         },
         {
-          "id": "./node_modules/webpack-dev-server/client/utils/createSocketUrl.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\utils\\createSocketUrl.js",
-          "name": "(webpack)-dev-server/client/utils/createSocketUrl.js"
+          "id": "./node_modules/webpack-dev-server/client/socket.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\socket.js",
+          "name": "(webpack)-dev-server/client/socket.js"
         },
         {
-          "id": "./node_modules/url/url.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\url\\url.js",
-          "name": "./node_modules/url/url.js"
+          "id": "./node_modules/webpack-dev-server/client/clients/SockJSClient.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\webpack-dev-server\\client\\clients\\SockJSClient.js",
+          "name": "(webpack)-dev-server/client/clients/SockJSClient.js"
         },
         {
-          "id": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\node-libs-browser\\node_modules\\punycode\\punycode.js",
-          "name": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js"
+          "id": "./node_modules/sockjs-client/dist/sockjs.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\sockjs-client\\dist\\sockjs.js",
+          "name": "./node_modules/sockjs-client/dist/sockjs.js"
         }
       ],
       "failed": false,
@@ -6392,7 +6411,7 @@
       "index2": 20,
       "size": 497,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6454,7 +6473,7 @@
       "index": 31,
       "index2": 30,
       "size": 170,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6502,7 +6521,7 @@
       "index2": 18,
       "size": 75,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6555,7 +6574,7 @@
       "index2": 29,
       "size": 1372,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": true,
       "prefetched": false,
       "chunks": [
@@ -6608,7 +6627,7 @@
       "index2": 54,
       "size": 5367,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6668,15 +6687,15 @@
       "index2": 48,
       "size": 1046,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "main~._m"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-      "issuerId": "./src/scripts/views/pages/likes.js",
-      "issuerName": "./src/scripts/views/pages/likes.js",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+      "issuerId": "./src/scripts/utils/like-button-iniator.js",
+      "issuerName": "./src/scripts/utils/like-button-iniator.js",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -6694,9 +6713,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/likes.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-          "name": "./src/scripts/views/pages/likes.js"
+          "id": "./src/scripts/views/pages/detail.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\detail.js",
+          "name": "./src/scripts/views/pages/detail.js"
+        },
+        {
+          "id": "./src/scripts/utils/like-button-iniator.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\utils\\like-button-iniator.js",
+          "name": "./src/scripts/utils/like-button-iniator.js"
         }
       ],
       "failed": false,
@@ -6756,7 +6780,7 @@
           "moduleName": "./src/scripts/views/pages/likes.js",
           "type": "harmony import specifier",
           "userRequest": "../../data/favorite-restaurant-idb",
-          "loc": "31:30-51"
+          "loc": "34:30-51"
         }
       ],
       "providedExports": [
@@ -6773,7 +6797,7 @@
       "index2": 41,
       "size": 547,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6825,7 +6849,7 @@
           "moduleName": "./src/scripts/views/pages/detail.js",
           "type": "harmony import specifier",
           "userRequest": "../../data/restaurantdb-source",
-          "loc": "27:33-54"
+          "loc": "30:33-54"
         },
         {
           "moduleId": "./src/scripts/views/pages/list-restaurant.js",
@@ -6843,7 +6867,7 @@
           "moduleName": "./src/scripts/views/pages/list-restaurant.js",
           "type": "harmony import specifier",
           "userRequest": "../../data/restaurantdb-source",
-          "loc": "35:34-55"
+          "loc": "38:34-55"
         }
       ],
       "providedExports": [
@@ -6860,7 +6884,7 @@
       "index2": 40,
       "size": 197,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -6941,17 +6965,17 @@
       "name": "./src/scripts/globals/config.js",
       "index": 46,
       "index2": 39,
-      "size": 329,
+      "size": 321,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         "main~._m"
       ],
-      "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\data\\favorite-restaurant-idb.js",
-      "issuerId": "./src/scripts/data/favorite-restaurant-idb.js",
-      "issuerName": "./src/scripts/data/favorite-restaurant-idb.js",
+      "issuer": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\templates\\template-creator.js",
+      "issuerId": "./src/scripts/views/templates/template-creator.js",
+      "issuerName": "./src/scripts/views/templates/template-creator.js",
       "issuerPath": [
         {
           "id": "./src/scripts/index.js",
@@ -6969,14 +6993,14 @@
           "name": "./src/scripts/routes/routes.js"
         },
         {
-          "id": "./src/scripts/views/pages/likes.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\likes.js",
-          "name": "./src/scripts/views/pages/likes.js"
+          "id": "./src/scripts/views/pages/list-restaurant.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\pages\\list-restaurant.js",
+          "name": "./src/scripts/views/pages/list-restaurant.js"
         },
         {
-          "id": "./src/scripts/data/favorite-restaurant-idb.js",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\data\\favorite-restaurant-idb.js",
-          "name": "./src/scripts/data/favorite-restaurant-idb.js"
+          "id": "./src/scripts/views/templates/template-creator.js",
+          "identifier": "D:\\laragon\\www\\hunger-apps\\src\\scripts\\views\\templates\\template-creator.js",
+          "name": "./src/scripts/views/templates/template-creator.js"
         }
       ],
       "failed": false,
@@ -7071,7 +7095,7 @@
       "index2": 56,
       "size": 402,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7117,7 +7141,7 @@
       "index2": 37,
       "size": 1581,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7160,7 +7184,7 @@
       "index2": 52,
       "size": 289,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7219,7 +7243,7 @@
       "index2": 38,
       "size": 877,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7279,7 +7303,7 @@
           "moduleName": "./src/scripts/views/pages/detail.js",
           "type": "harmony import specifier",
           "userRequest": "../../routes/url-parser",
-          "loc": "26:20-29"
+          "loc": "29:20-29"
         }
       ],
       "providedExports": [
@@ -7296,7 +7320,7 @@
       "index2": 49,
       "size": 1556,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7348,7 +7372,7 @@
           "moduleName": "./src/scripts/views/pages/detail.js",
           "type": "harmony import specifier",
           "userRequest": "../../utils/like-button-iniator",
-          "loc": "31:8-27"
+          "loc": "34:8-27"
         }
       ],
       "providedExports": [
@@ -7365,7 +7389,7 @@
       "index2": 55,
       "size": 240,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7419,7 +7443,7 @@
       "index2": 53,
       "size": 423,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7471,9 +7495,9 @@
       "name": "./src/scripts/views/pages/detail.js",
       "index": 50,
       "index2": 50,
-      "size": 1777,
+      "size": 1792,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7535,7 +7559,7 @@
       "name": "./src/scripts/views/pages/likes.js",
       "index": 55,
       "index2": 51,
-      "size": 1709,
+      "size": 1740,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -7599,9 +7623,9 @@
       "name": "./src/scripts/views/pages/list-restaurant.js",
       "index": 43,
       "index2": 45,
-      "size": 1770,
+      "size": 1792,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7665,7 +7689,7 @@
       "index2": 44,
       "size": 3094,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -7744,7 +7768,7 @@
           "moduleName": "./src/scripts/views/pages/detail.js",
           "type": "harmony import specifier",
           "userRequest": "../templates/template-creator",
-          "loc": "29:40-70"
+          "loc": "32:40-70"
         },
         {
           "moduleId": "./src/scripts/views/pages/likes.js",
@@ -7762,7 +7786,7 @@
           "moduleName": "./src/scripts/views/pages/likes.js",
           "type": "harmony import specifier",
           "userRequest": "../templates/template-creator",
-          "loc": "36:42-70"
+          "loc": "39:42-70"
         },
         {
           "moduleId": "./src/scripts/views/pages/likes.js",
@@ -7771,7 +7795,7 @@
           "moduleName": "./src/scripts/views/pages/likes.js",
           "type": "harmony import specifier",
           "userRequest": "../templates/template-creator",
-          "loc": "39:39-60"
+          "loc": "42:39-60"
         },
         {
           "moduleId": "./src/scripts/views/pages/list-restaurant.js",
@@ -7789,7 +7813,7 @@
           "moduleName": "./src/scripts/views/pages/list-restaurant.js",
           "type": "harmony import specifier",
           "userRequest": "../templates/template-creator",
-          "loc": "39:46-74"
+          "loc": "42:46-74"
         }
       ],
       "providedExports": [
@@ -7804,13 +7828,13 @@
     },
     {
       "id": "./src/styles/style.css",
-      "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
+      "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\style-loader\\dist\\cjs.js!D:\\laragon\\www\\hunger-apps\\node_modules\\css-loader\\dist\\cjs.js??ref--4-1!D:\\laragon\\www\\hunger-apps\\src\\styles\\style.css",
       "name": "./src/styles/style.css",
       "index": 35,
       "index2": 36,
-      "size": 525,
+      "size": 535,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -8059,7 +8083,7 @@
       "entries": [
         {
           "type": "info",
-          "message": "The service worker at sw.js will precache\n        19 URLs, totaling 845 kB."
+          "message": "The service worker at sw.js will precache\n        18 URLs, totaling 843 kB."
         }
       ],
       "filteredEntries": 0,
@@ -8073,179 +8097,12 @@
       "publicPath": "",
       "outputPath": "D:\\laragon\\www\\hunger-apps\\dist",
       "assetsByChunkName": {
-        "HtmlWebpackPlugin_0": "__child-HtmlWebpackPlugin_0"
-      },
-      "assets": [
-        {
-          "name": "__child-HtmlWebpackPlugin_0",
-          "size": 6397,
-          "chunks": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "chunkNames": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "info": {},
-          "emitted": false
-        }
-      ],
-      "filteredAssets": 0,
-      "entrypoints": {
-        "HtmlWebpackPlugin_0": {
-          "chunks": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "assets": [
-            "__child-HtmlWebpackPlugin_0"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "namedChunkGroups": {
-        "HtmlWebpackPlugin_0": {
-          "chunks": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "assets": [
-            "__child-HtmlWebpackPlugin_0"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "chunks": [
-        {
-          "id": "HtmlWebpackPlugin_0",
-          "rendered": true,
-          "initial": true,
-          "entry": true,
-          "size": 1963,
-          "names": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "files": [
-            "__child-HtmlWebpackPlugin_0"
-          ],
-          "hash": "113ef385c0008a4fe736",
-          "siblings": [],
-          "parents": [],
-          "children": [],
-          "childrenByOrder": {},
-          "modules": [
-            {
-              "id": "./node_modules/html-webpack-plugin/lib/loader.js!./src/templates/index.html",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\laragon\\www\\hunger-apps\\src\\templates\\index.html",
-              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/templates/index.html",
-              "index": 0,
-              "index2": 0,
-              "size": 1963,
-              "cacheable": true,
-              "built": true,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                "HtmlWebpackPlugin_0"
-              ],
-              "issuer": null,
-              "issuerId": null,
-              "issuerName": null,
-              "issuerPath": null,
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": null,
-                  "moduleIdentifier": null,
-                  "module": null,
-                  "moduleName": null,
-                  "type": "single entry",
-                  "userRequest": "D:\\laragon\\www\\hunger-apps\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\laragon\\www\\hunger-apps\\src\\templates\\index.html",
-                  "loc": "HtmlWebpackPlugin_0"
-                }
-              ],
-              "providedExports": null,
-              "optimizationBailout": [],
-              "depth": 0
-            }
-          ],
-          "filteredModules": 0,
-          "origins": [
-            {
-              "module": "",
-              "moduleIdentifier": "",
-              "moduleName": "",
-              "loc": "HtmlWebpackPlugin_0",
-              "request": "D:\\laragon\\www\\hunger-apps\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\laragon\\www\\hunger-apps\\src\\templates\\index.html",
-              "reasons": []
-            }
-          ]
-        }
-      ],
-      "modules": [
-        {
-          "id": "./node_modules/html-webpack-plugin/lib/loader.js!./src/templates/index.html",
-          "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\laragon\\www\\hunger-apps\\src\\templates\\index.html",
-          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/templates/index.html",
-          "index": 0,
-          "index2": 0,
-          "size": 1963,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "HtmlWebpackPlugin_0"
-          ],
-          "issuer": null,
-          "issuerId": null,
-          "issuerName": null,
-          "issuerPath": null,
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": null,
-              "moduleIdentifier": null,
-              "module": null,
-              "moduleName": null,
-              "type": "single entry",
-              "userRequest": "D:\\laragon\\www\\hunger-apps\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\laragon\\www\\hunger-apps\\src\\templates\\index.html",
-              "loc": "HtmlWebpackPlugin_0"
-            }
-          ],
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 0
-        }
-      ],
-      "filteredModules": 0,
-      "logging": {
-        "webpack.buildChunkGraph.visitModules": {
-          "entries": [],
-          "filteredEntries": 2,
-          "debug": false
-        }
-      },
-      "children": [],
-      "name": "HtmlWebpackCompiler"
-    },
-    {
-      "errors": [],
-      "warnings": [],
-      "publicPath": "",
-      "outputPath": "D:\\laragon\\www\\hunger-apps\\dist",
-      "assetsByChunkName": {
         "InjectManifest": "sw.js"
       },
       "assets": [
         {
           "name": "sw.js",
-          "size": 369567,
+          "size": 369559,
           "chunks": [
             "InjectManifest"
           ],
@@ -8284,17 +8141,17 @@
       "chunks": [
         {
           "id": "InjectManifest",
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
-          "size": 231116,
+          "size": 231108,
           "names": [
             "InjectManifest"
           ],
           "files": [
             "sw.js"
           ],
-          "hash": "b80f2af1c088ab52676f",
+          "hash": "9b013b4e26019ec0a353",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -8308,7 +8165,7 @@
               "index2": 0,
               "size": 24583,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -8351,7 +8208,7 @@
               "index2": 75,
               "size": 1577,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -8430,7 +8287,7 @@
               "index2": 64,
               "size": 9620,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -8517,7 +8374,7 @@
               "index2": 27,
               "size": 803,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -8604,7 +8461,7 @@
               "index2": 5,
               "size": 1058,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -9127,15 +8984,15 @@
               "index2": 6,
               "size": 2104,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
                 "InjectManifest"
               ],
-              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\Route.js",
-              "issuerId": "./node_modules/workbox-routing/Route.js",
-              "issuerName": "./node_modules/workbox-routing/Route.js",
+              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\PrecacheController.js",
+              "issuerId": "./node_modules/workbox-precaching/PrecacheController.js",
+              "issuerName": "./node_modules/workbox-precaching/PrecacheController.js",
               "issuerPath": [
                 {
                   "id": "./src/scripts/sw.js",
@@ -9143,19 +9000,19 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-routing/registerRoute.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\registerRoute.mjs",
-                  "name": "./node_modules/workbox-routing/registerRoute.mjs"
+                  "id": "./node_modules/workbox-precaching/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+                  "name": "./node_modules/workbox-precaching/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-routing/registerRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\registerRoute.js",
-                  "name": "./node_modules/workbox-routing/registerRoute.js"
+                  "id": "./node_modules/workbox-precaching/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+                  "name": "./node_modules/workbox-precaching/index.js"
                 },
                 {
-                  "id": "./node_modules/workbox-routing/Route.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\Route.js",
-                  "name": "./node_modules/workbox-routing/Route.js"
+                  "id": "./node_modules/workbox-precaching/PrecacheController.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\PrecacheController.js",
+                  "name": "./node_modules/workbox-precaching/PrecacheController.js"
                 }
               ],
               "failed": false,
@@ -9592,7 +9449,7 @@
               "index2": 26,
               "size": 1611,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -9679,7 +9536,7 @@
               "index2": 16,
               "size": 1522,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -9910,7 +9767,7 @@
               "index2": 73,
               "size": 975,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -9979,7 +9836,7 @@
               "index2": 24,
               "size": 1034,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -10066,7 +9923,7 @@
               "index2": 65,
               "size": 934,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -10153,15 +10010,15 @@
               "index2": 63,
               "size": 399,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
                 "InjectManifest"
               ],
-              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\_private.js",
-              "issuerId": "./node_modules/workbox-core/_private.js",
-              "issuerName": "./node_modules/workbox-core/_private.js",
+              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\CacheExpiration.js",
+              "issuerId": "./node_modules/workbox-expiration/CacheExpiration.js",
+              "issuerName": "./node_modules/workbox-expiration/CacheExpiration.js",
               "issuerPath": [
                 {
                   "id": "./src/scripts/sw.js",
@@ -10169,19 +10026,19 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-core/index.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\index.mjs",
-                  "name": "./node_modules/workbox-core/index.mjs"
+                  "id": "./node_modules/workbox-expiration/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\index.mjs",
+                  "name": "./node_modules/workbox-expiration/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-core/index.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\index.js",
-                  "name": "./node_modules/workbox-core/index.js"
+                  "id": "./node_modules/workbox-expiration/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\index.js",
+                  "name": "./node_modules/workbox-expiration/index.js"
                 },
                 {
-                  "id": "./node_modules/workbox-core/_private.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\_private.js",
-                  "name": "./node_modules/workbox-core/_private.js"
+                  "id": "./node_modules/workbox-expiration/CacheExpiration.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\CacheExpiration.js",
+                  "name": "./node_modules/workbox-expiration/CacheExpiration.js"
                 }
               ],
               "failed": false,
@@ -10258,7 +10115,7 @@
               "index2": 29,
               "size": 1051,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -10345,7 +10202,7 @@
               "index2": 12,
               "size": 542,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -10361,19 +10218,14 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+                  "id": "./node_modules/workbox-precaching/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+                  "name": "./node_modules/workbox-precaching/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-                },
-                {
-                  "id": "./node_modules/workbox-precaching/addRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-                  "name": "./node_modules/workbox-precaching/addRoute.js"
+                  "id": "./node_modules/workbox-precaching/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+                  "name": "./node_modules/workbox-precaching/index.js"
                 },
                 {
                   "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -10662,7 +10514,7 @@
               "index2": 2,
               "size": 2047,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -11680,7 +11532,7 @@
               "index2": 74,
               "size": 1730,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -11749,7 +11601,7 @@
               "index2": 30,
               "size": 508,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -11872,7 +11724,7 @@
               "index2": 17,
               "size": 587,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -11968,7 +11820,7 @@
               "index2": 1,
               "size": 89,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12264,7 +12116,7 @@
               "index2": 76,
               "size": 1280,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12328,7 +12180,7 @@
               "index2": 77,
               "size": 513,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12392,7 +12244,7 @@
               "index2": 25,
               "size": 2460,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12474,7 +12326,7 @@
               "index2": 81,
               "size": 935,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12539,7 +12391,7 @@
               "index2": 82,
               "size": 27,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12608,7 +12460,7 @@
               "index2": 4,
               "size": 733,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12677,7 +12529,7 @@
               "index2": 3,
               "size": 10755,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12751,7 +12603,7 @@
               "index2": 28,
               "size": 338,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12847,7 +12699,7 @@
               "index2": 69,
               "size": 1037,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12929,7 +12781,7 @@
               "index2": 78,
               "size": 2275,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -12993,7 +12845,7 @@
               "index2": 79,
               "size": 875,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13057,7 +12909,7 @@
               "index2": 80,
               "size": 206,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13119,7 +12971,7 @@
               "index2": 68,
               "size": 6800,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13201,7 +13053,7 @@
               "index2": 70,
               "size": 11211,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13265,7 +13117,7 @@
               "index2": 66,
               "size": 95,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13345,7 +13197,7 @@
               "index2": 71,
               "size": 405,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13405,7 +13257,7 @@
               "index2": 72,
               "size": 27,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13469,7 +13321,7 @@
               "index2": 67,
               "size": 6273,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13538,7 +13390,7 @@
               "index2": 35,
               "size": 11724,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13620,7 +13472,7 @@
               "index2": 50,
               "size": 1848,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13684,15 +13536,15 @@
               "index2": 39,
               "size": 2625,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
                 "InjectManifest"
               ],
-              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-              "issuerId": "./node_modules/workbox-precaching/addRoute.js",
-              "issuerName": "./node_modules/workbox-precaching/addRoute.js",
+              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "issuerId": "./node_modules/workbox-precaching/index.js",
+              "issuerName": "./node_modules/workbox-precaching/index.js",
               "issuerPath": [
                 {
                   "id": "./src/scripts/sw.js",
@@ -13700,19 +13552,14 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+                  "id": "./node_modules/workbox-precaching/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+                  "name": "./node_modules/workbox-precaching/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-                },
-                {
-                  "id": "./node_modules/workbox-precaching/addRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-                  "name": "./node_modules/workbox-precaching/addRoute.js"
+                  "id": "./node_modules/workbox-precaching/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+                  "name": "./node_modules/workbox-precaching/index.js"
                 }
               ],
               "failed": false,
@@ -13771,7 +13618,7 @@
               "index2": 34,
               "size": 9102,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -13853,7 +13700,7 @@
               "index2": 18,
               "size": 95,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14095,7 +13942,7 @@
               "index2": 44,
               "size": 605,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14159,7 +14006,7 @@
               "index2": 40,
               "size": 1211,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14241,7 +14088,7 @@
               "index2": 46,
               "size": 1236,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14305,7 +14152,7 @@
               "index2": 47,
               "size": 1147,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14369,7 +14216,7 @@
               "index2": 48,
               "size": 1171,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14433,7 +14280,7 @@
               "index2": 51,
               "size": 1542,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14503,7 +14350,7 @@
               "index2": 52,
               "size": 27,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14568,7 +14415,7 @@
               "index2": 49,
               "size": 976,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14632,7 +14479,7 @@
               "index2": 41,
               "size": 1178,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14714,7 +14561,7 @@
               "index2": 42,
               "size": 933,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14791,7 +14638,7 @@
               "index2": 43,
               "size": 38,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14845,7 +14692,7 @@
               "index2": 21,
               "size": 823,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14914,7 +14761,7 @@
               "index2": 20,
               "size": 1274,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -14983,7 +14830,7 @@
               "index2": 19,
               "size": 1894,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15052,7 +14899,7 @@
               "index2": 45,
               "size": 1549,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15121,7 +14968,7 @@
               "index2": 38,
               "size": 1513,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15137,19 +14984,14 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+                  "id": "./node_modules/workbox-precaching/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+                  "name": "./node_modules/workbox-precaching/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-                },
-                {
-                  "id": "./node_modules/workbox-precaching/addRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-                  "name": "./node_modules/workbox-precaching/addRoute.js"
+                  "id": "./node_modules/workbox-precaching/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+                  "name": "./node_modules/workbox-precaching/index.js"
                 },
                 {
                   "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -15195,15 +15037,15 @@
               "index2": 36,
               "size": 525,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
                 "InjectManifest"
               ],
-              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precache.js",
-              "issuerId": "./node_modules/workbox-precaching/precache.js",
-              "issuerName": "./node_modules/workbox-precaching/precache.js",
+              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
+              "issuerId": "./node_modules/workbox-precaching/addRoute.js",
+              "issuerName": "./node_modules/workbox-precaching/addRoute.js",
               "issuerPath": [
                 {
                   "id": "./src/scripts/sw.js",
@@ -15221,9 +15063,9 @@
                   "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precache.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precache.js",
-                  "name": "./node_modules/workbox-precaching/precache.js"
+                  "id": "./node_modules/workbox-precaching/addRoute.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
+                  "name": "./node_modules/workbox-precaching/addRoute.js"
                 }
               ],
               "failed": false,
@@ -15372,7 +15214,7 @@
               "index2": 22,
               "size": 1033,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15441,7 +15283,7 @@
               "index2": 23,
               "size": 1466,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15510,7 +15352,7 @@
               "index2": 37,
               "size": 1072,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15526,19 +15368,14 @@
                   "name": "./src/scripts/sw.js"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+                  "id": "./node_modules/workbox-precaching/index.mjs",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+                  "name": "./node_modules/workbox-precaching/index.mjs"
                 },
                 {
-                  "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-                  "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-                },
-                {
-                  "id": "./node_modules/workbox-precaching/addRoute.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-                  "name": "./node_modules/workbox-precaching/addRoute.js"
+                  "id": "./node_modules/workbox-precaching/index.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+                  "name": "./node_modules/workbox-precaching/index.js"
                 },
                 {
                   "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -15589,7 +15426,7 @@
               "index2": 11,
               "size": 3215,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15653,7 +15490,7 @@
               "index2": 10,
               "size": 2212,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15771,7 +15608,7 @@
               "index2": 13,
               "size": 16246,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15840,7 +15677,7 @@
               "index2": 7,
               "size": 92,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -15947,7 +15784,7 @@
               "index2": 15,
               "size": 4089,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16024,7 +15861,7 @@
               "index2": 53,
               "size": 35,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16087,7 +15924,7 @@
               "index2": 8,
               "size": 624,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16184,7 +16021,7 @@
               "index2": 14,
               "size": 744,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16248,7 +16085,7 @@
               "index2": 9,
               "size": 1201,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16353,7 +16190,7 @@
               "index2": 55,
               "size": 3192,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16417,7 +16254,7 @@
               "index2": 56,
               "size": 2358,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16481,7 +16318,7 @@
               "index2": 58,
               "size": 7959,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16545,7 +16382,7 @@
               "index2": 59,
               "size": 3767,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16609,7 +16446,7 @@
               "index2": 60,
               "size": 5138,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16673,7 +16510,7 @@
               "index2": 33,
               "size": 9296,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16845,7 +16682,7 @@
               "index2": 32,
               "size": 20949,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -16927,7 +16764,7 @@
               "index2": 31,
               "size": 95,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17061,7 +16898,7 @@
               "index2": 61,
               "size": 862,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17126,7 +16963,7 @@
               "index2": 62,
               "size": 27,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17195,7 +17032,7 @@
               "index2": 57,
               "size": 677,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17282,15 +17119,15 @@
               "index2": 54,
               "size": 728,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
                 "InjectManifest"
               ],
-              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\NetworkOnly.js",
-              "issuerId": "./node_modules/workbox-strategies/NetworkOnly.js",
-              "issuerName": "./node_modules/workbox-strategies/NetworkOnly.js",
+              "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\CacheFirst.js",
+              "issuerId": "./node_modules/workbox-strategies/CacheFirst.js",
+              "issuerName": "./node_modules/workbox-strategies/CacheFirst.js",
               "issuerPath": [
                 {
                   "id": "./src/scripts/sw.js",
@@ -17308,9 +17145,9 @@
                   "name": "./node_modules/workbox-strategies/index.js"
                 },
                 {
-                  "id": "./node_modules/workbox-strategies/NetworkOnly.js",
-                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\NetworkOnly.js",
-                  "name": "./node_modules/workbox-strategies/NetworkOnly.js"
+                  "id": "./node_modules/workbox-strategies/CacheFirst.js",
+                  "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\CacheFirst.js",
+                  "name": "./node_modules/workbox-strategies/CacheFirst.js"
                 }
               ],
               "failed": false,
@@ -17466,9 +17303,9 @@
               "name": "./src/scripts/globals/config.js",
               "index": 84,
               "index2": 83,
-              "size": 329,
+              "size": 321,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17522,7 +17359,7 @@
               "index2": 84,
               "size": 1655,
               "cacheable": true,
-              "built": true,
+              "built": false,
               "optional": false,
               "prefetched": false,
               "chunks": [
@@ -17574,7 +17411,7 @@
           "index2": 0,
           "size": 24583,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -17617,7 +17454,7 @@
           "index2": 75,
           "size": 1577,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -17696,7 +17533,7 @@
           "index2": 64,
           "size": 9620,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -17783,7 +17620,7 @@
           "index2": 27,
           "size": 803,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -17870,7 +17707,7 @@
           "index2": 5,
           "size": 1058,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -18393,15 +18230,15 @@
           "index2": 6,
           "size": 2104,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "InjectManifest"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\Route.js",
-          "issuerId": "./node_modules/workbox-routing/Route.js",
-          "issuerName": "./node_modules/workbox-routing/Route.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\PrecacheController.js",
+          "issuerId": "./node_modules/workbox-precaching/PrecacheController.js",
+          "issuerName": "./node_modules/workbox-precaching/PrecacheController.js",
           "issuerPath": [
             {
               "id": "./src/scripts/sw.js",
@@ -18409,19 +18246,19 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-routing/registerRoute.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\registerRoute.mjs",
-              "name": "./node_modules/workbox-routing/registerRoute.mjs"
+              "id": "./node_modules/workbox-precaching/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+              "name": "./node_modules/workbox-precaching/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-routing/registerRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\registerRoute.js",
-              "name": "./node_modules/workbox-routing/registerRoute.js"
+              "id": "./node_modules/workbox-precaching/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "name": "./node_modules/workbox-precaching/index.js"
             },
             {
-              "id": "./node_modules/workbox-routing/Route.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-routing\\Route.js",
-              "name": "./node_modules/workbox-routing/Route.js"
+              "id": "./node_modules/workbox-precaching/PrecacheController.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\PrecacheController.js",
+              "name": "./node_modules/workbox-precaching/PrecacheController.js"
             }
           ],
           "failed": false,
@@ -18858,7 +18695,7 @@
           "index2": 26,
           "size": 1611,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -18945,7 +18782,7 @@
           "index2": 16,
           "size": 1522,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19176,7 +19013,7 @@
           "index2": 73,
           "size": 975,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19245,7 +19082,7 @@
           "index2": 24,
           "size": 1034,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19332,7 +19169,7 @@
           "index2": 65,
           "size": 934,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19419,15 +19256,15 @@
           "index2": 63,
           "size": 399,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "InjectManifest"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\_private.js",
-          "issuerId": "./node_modules/workbox-core/_private.js",
-          "issuerName": "./node_modules/workbox-core/_private.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\CacheExpiration.js",
+          "issuerId": "./node_modules/workbox-expiration/CacheExpiration.js",
+          "issuerName": "./node_modules/workbox-expiration/CacheExpiration.js",
           "issuerPath": [
             {
               "id": "./src/scripts/sw.js",
@@ -19435,19 +19272,19 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-core/index.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\index.mjs",
-              "name": "./node_modules/workbox-core/index.mjs"
+              "id": "./node_modules/workbox-expiration/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\index.mjs",
+              "name": "./node_modules/workbox-expiration/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-core/index.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\index.js",
-              "name": "./node_modules/workbox-core/index.js"
+              "id": "./node_modules/workbox-expiration/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\index.js",
+              "name": "./node_modules/workbox-expiration/index.js"
             },
             {
-              "id": "./node_modules/workbox-core/_private.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-core\\_private.js",
-              "name": "./node_modules/workbox-core/_private.js"
+              "id": "./node_modules/workbox-expiration/CacheExpiration.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-expiration\\CacheExpiration.js",
+              "name": "./node_modules/workbox-expiration/CacheExpiration.js"
             }
           ],
           "failed": false,
@@ -19524,7 +19361,7 @@
           "index2": 29,
           "size": 1051,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19611,7 +19448,7 @@
           "index2": 12,
           "size": 542,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -19627,19 +19464,14 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+              "id": "./node_modules/workbox-precaching/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+              "name": "./node_modules/workbox-precaching/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-            },
-            {
-              "id": "./node_modules/workbox-precaching/addRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-              "name": "./node_modules/workbox-precaching/addRoute.js"
+              "id": "./node_modules/workbox-precaching/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "name": "./node_modules/workbox-precaching/index.js"
             },
             {
               "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -19928,7 +19760,7 @@
           "index2": 2,
           "size": 2047,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -20946,7 +20778,7 @@
           "index2": 74,
           "size": 1730,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21015,7 +20847,7 @@
           "index2": 30,
           "size": 508,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21138,7 +20970,7 @@
           "index2": 17,
           "size": 587,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21234,7 +21066,7 @@
           "index2": 1,
           "size": 89,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21530,7 +21362,7 @@
           "index2": 76,
           "size": 1280,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21594,7 +21426,7 @@
           "index2": 77,
           "size": 513,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21658,7 +21490,7 @@
           "index2": 25,
           "size": 2460,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21740,7 +21572,7 @@
           "index2": 81,
           "size": 935,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21805,7 +21637,7 @@
           "index2": 82,
           "size": 27,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21874,7 +21706,7 @@
           "index2": 4,
           "size": 733,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -21943,7 +21775,7 @@
           "index2": 3,
           "size": 10755,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22017,7 +21849,7 @@
           "index2": 28,
           "size": 338,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22113,7 +21945,7 @@
           "index2": 69,
           "size": 1037,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22195,7 +22027,7 @@
           "index2": 78,
           "size": 2275,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22259,7 +22091,7 @@
           "index2": 79,
           "size": 875,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22323,7 +22155,7 @@
           "index2": 80,
           "size": 206,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22385,7 +22217,7 @@
           "index2": 68,
           "size": 6800,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22467,7 +22299,7 @@
           "index2": 70,
           "size": 11211,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22531,7 +22363,7 @@
           "index2": 66,
           "size": 95,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22611,7 +22443,7 @@
           "index2": 71,
           "size": 405,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22671,7 +22503,7 @@
           "index2": 72,
           "size": 27,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22735,7 +22567,7 @@
           "index2": 67,
           "size": 6273,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22804,7 +22636,7 @@
           "index2": 35,
           "size": 11724,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22886,7 +22718,7 @@
           "index2": 50,
           "size": 1848,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -22950,15 +22782,15 @@
           "index2": 39,
           "size": 2625,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "InjectManifest"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-          "issuerId": "./node_modules/workbox-precaching/addRoute.js",
-          "issuerName": "./node_modules/workbox-precaching/addRoute.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+          "issuerId": "./node_modules/workbox-precaching/index.js",
+          "issuerName": "./node_modules/workbox-precaching/index.js",
           "issuerPath": [
             {
               "id": "./src/scripts/sw.js",
@@ -22966,19 +22798,14 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+              "id": "./node_modules/workbox-precaching/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+              "name": "./node_modules/workbox-precaching/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-            },
-            {
-              "id": "./node_modules/workbox-precaching/addRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-              "name": "./node_modules/workbox-precaching/addRoute.js"
+              "id": "./node_modules/workbox-precaching/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "name": "./node_modules/workbox-precaching/index.js"
             }
           ],
           "failed": false,
@@ -23037,7 +22864,7 @@
           "index2": 34,
           "size": 9102,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23119,7 +22946,7 @@
           "index2": 18,
           "size": 95,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23361,7 +23188,7 @@
           "index2": 44,
           "size": 605,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23425,7 +23252,7 @@
           "index2": 40,
           "size": 1211,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23507,7 +23334,7 @@
           "index2": 46,
           "size": 1236,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23571,7 +23398,7 @@
           "index2": 47,
           "size": 1147,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23635,7 +23462,7 @@
           "index2": 48,
           "size": 1171,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23699,7 +23526,7 @@
           "index2": 51,
           "size": 1542,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23769,7 +23596,7 @@
           "index2": 52,
           "size": 27,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23834,7 +23661,7 @@
           "index2": 49,
           "size": 976,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23898,7 +23725,7 @@
           "index2": 41,
           "size": 1178,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -23980,7 +23807,7 @@
           "index2": 42,
           "size": 933,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24057,7 +23884,7 @@
           "index2": 43,
           "size": 38,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24111,7 +23938,7 @@
           "index2": 21,
           "size": 823,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24180,7 +24007,7 @@
           "index2": 20,
           "size": 1274,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24249,7 +24076,7 @@
           "index2": 19,
           "size": 1894,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24318,7 +24145,7 @@
           "index2": 45,
           "size": 1549,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24387,7 +24214,7 @@
           "index2": 38,
           "size": 1513,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24403,19 +24230,14 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+              "id": "./node_modules/workbox-precaching/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+              "name": "./node_modules/workbox-precaching/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-            },
-            {
-              "id": "./node_modules/workbox-precaching/addRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-              "name": "./node_modules/workbox-precaching/addRoute.js"
+              "id": "./node_modules/workbox-precaching/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "name": "./node_modules/workbox-precaching/index.js"
             },
             {
               "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -24461,15 +24283,15 @@
           "index2": 36,
           "size": 525,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "InjectManifest"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precache.js",
-          "issuerId": "./node_modules/workbox-precaching/precache.js",
-          "issuerName": "./node_modules/workbox-precaching/precache.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
+          "issuerId": "./node_modules/workbox-precaching/addRoute.js",
+          "issuerName": "./node_modules/workbox-precaching/addRoute.js",
           "issuerPath": [
             {
               "id": "./src/scripts/sw.js",
@@ -24487,9 +24309,9 @@
               "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
             },
             {
-              "id": "./node_modules/workbox-precaching/precache.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precache.js",
-              "name": "./node_modules/workbox-precaching/precache.js"
+              "id": "./node_modules/workbox-precaching/addRoute.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
+              "name": "./node_modules/workbox-precaching/addRoute.js"
             }
           ],
           "failed": false,
@@ -24638,7 +24460,7 @@
           "index2": 22,
           "size": 1033,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24707,7 +24529,7 @@
           "index2": 23,
           "size": 1466,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24776,7 +24598,7 @@
           "index2": 37,
           "size": 1072,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24792,19 +24614,14 @@
               "name": "./src/scripts/sw.js"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.mjs",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.mjs",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.mjs"
+              "id": "./node_modules/workbox-precaching/index.mjs",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.mjs",
+              "name": "./node_modules/workbox-precaching/index.mjs"
             },
             {
-              "id": "./node_modules/workbox-precaching/precacheAndRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\precacheAndRoute.js",
-              "name": "./node_modules/workbox-precaching/precacheAndRoute.js"
-            },
-            {
-              "id": "./node_modules/workbox-precaching/addRoute.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\addRoute.js",
-              "name": "./node_modules/workbox-precaching/addRoute.js"
+              "id": "./node_modules/workbox-precaching/index.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-precaching\\index.js",
+              "name": "./node_modules/workbox-precaching/index.js"
             },
             {
               "id": "./node_modules/workbox-precaching/PrecacheRoute.js",
@@ -24855,7 +24672,7 @@
           "index2": 11,
           "size": 3215,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -24919,7 +24736,7 @@
           "index2": 10,
           "size": 2212,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25037,7 +24854,7 @@
           "index2": 13,
           "size": 16246,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25106,7 +24923,7 @@
           "index2": 7,
           "size": 92,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25213,7 +25030,7 @@
           "index2": 15,
           "size": 4089,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25290,7 +25107,7 @@
           "index2": 53,
           "size": 35,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25353,7 +25170,7 @@
           "index2": 8,
           "size": 624,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25450,7 +25267,7 @@
           "index2": 14,
           "size": 744,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25514,7 +25331,7 @@
           "index2": 9,
           "size": 1201,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25619,7 +25436,7 @@
           "index2": 55,
           "size": 3192,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25683,7 +25500,7 @@
           "index2": 56,
           "size": 2358,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25747,7 +25564,7 @@
           "index2": 58,
           "size": 7959,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25811,7 +25628,7 @@
           "index2": 59,
           "size": 3767,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25875,7 +25692,7 @@
           "index2": 60,
           "size": 5138,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -25939,7 +25756,7 @@
           "index2": 33,
           "size": 9296,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26111,7 +25928,7 @@
           "index2": 32,
           "size": 20949,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26193,7 +26010,7 @@
           "index2": 31,
           "size": 95,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26327,7 +26144,7 @@
           "index2": 61,
           "size": 862,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26392,7 +26209,7 @@
           "index2": 62,
           "size": 27,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26461,7 +26278,7 @@
           "index2": 57,
           "size": 677,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26548,15 +26365,15 @@
           "index2": 54,
           "size": 728,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             "InjectManifest"
           ],
-          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\NetworkOnly.js",
-          "issuerId": "./node_modules/workbox-strategies/NetworkOnly.js",
-          "issuerName": "./node_modules/workbox-strategies/NetworkOnly.js",
+          "issuer": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\CacheFirst.js",
+          "issuerId": "./node_modules/workbox-strategies/CacheFirst.js",
+          "issuerName": "./node_modules/workbox-strategies/CacheFirst.js",
           "issuerPath": [
             {
               "id": "./src/scripts/sw.js",
@@ -26574,9 +26391,9 @@
               "name": "./node_modules/workbox-strategies/index.js"
             },
             {
-              "id": "./node_modules/workbox-strategies/NetworkOnly.js",
-              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\NetworkOnly.js",
-              "name": "./node_modules/workbox-strategies/NetworkOnly.js"
+              "id": "./node_modules/workbox-strategies/CacheFirst.js",
+              "identifier": "D:\\laragon\\www\\hunger-apps\\node_modules\\workbox-strategies\\CacheFirst.js",
+              "name": "./node_modules/workbox-strategies/CacheFirst.js"
             }
           ],
           "failed": false,
@@ -26732,9 +26549,9 @@
           "name": "./src/scripts/globals/config.js",
           "index": 84,
           "index2": 83,
-          "size": 329,
+          "size": 321,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -26788,7 +26605,7 @@
           "index2": 84,
           "size": 1655,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
